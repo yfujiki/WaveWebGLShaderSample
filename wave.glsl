@@ -42,7 +42,7 @@ void main(void){
 
     float posFactors4[2]; posFactors4[0] = 0.8; posFactors4[1] = 1.6;
     float timeFactors4[2]; timeFactors4[0] = 1.2; timeFactors4[1] = 0.9;
-    vec4 dest4 = wave(dest3, p, t, vec4(1.0, 1.0, 1.0, 1.0), posFactors4, timeFactors4, -2);
+    vec4 dest4 = wave(dest3, p, t, vec4(0.0, 0.0, 0.0, 0.0), posFactors4, timeFactors4, -2);
     
     gl_FragColor = dest4;
 }
