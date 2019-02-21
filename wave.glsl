@@ -1,8 +1,4 @@
-// ToDos : 
-//     1. Probably the original is blending only sign waves with different magnitude/speed
-//        https://twitter.com/PJaYOfficial/status/1083459961341001728
-//     2. How to blend this in the canvas
-//
+//Inspired by https://twitter.com/PJaYOfficial/status/1083459961341001728
 precision mediump float;
 uniform float t; // time
 uniform vec2  r; // resolution
