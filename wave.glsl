@@ -7,6 +7,7 @@ float pi = 3.14 / 2.0;
 
 vec4 colorOfWave(float ttime, vec2 position, vec4 srcColor, vec4 targetColor, float timeFactor, float offsetX, float offsetY) {
 	float value = sin((ttime * timeFactor + (position.x + offsetX)) * 2.0 * pi) * 0.1 + offsetY;
+	value += sin(position.x * 4.0 * pi) * 0.01;
 
 	vec4 color = srcColor;
 	if (position.y < value) {
