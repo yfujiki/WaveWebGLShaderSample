@@ -5,18 +5,6 @@ uniform vec2  r; // resolution
 
 float pi = 3.14 / 2.0;
 
-vec4 wave(vec4 src, vec2 position, float tt, vec4 color, float timeFactor, float offsetFactor, float level) {
-	float value = sin(-tt * timeFactor * 2.0 + (position.x + offsetFactor) * 2.0 * pi) * 0.18;
-    value = value + sin(position.x * 4.0 * pi) * 0.02;
-    value = value + level * 0.25;
-	
-	if (position.y < value) {
-		return color;
-	}
-	
-	return src;
-}
-
 void main(void){
     vec2 p = (gl_FragCoord.xy * 2.0 - r) / min(r.x, r.y);
 
